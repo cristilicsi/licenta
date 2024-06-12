@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pagină cu Meniu</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <header> 
+        <nav class="navbar"> 
+            <a href="index.html"> <div class="logo"><span style="color:white" >Inter</span>Nexa</div> </a>
+            <ul class="nav-links"> 
+                <li><a href="index.html">Acasa</a></li> 
+                <li><a href="http://localhost:3000/oferte.php">Oferte</a></li>
+                <li><a href="despre.html">Despre</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+            <div class="nav-icons">
+                <a href="http://localhost:3000/upload.php"><i class="fas fa-plus"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <section class="intro"> 
+            <div class="intro-text">Construiește-ți viitorul: Internship-uri disponibile acum! 
+                <p>Îți deschidem ușa către experiențe practice și oportunități de învățare. <br>Explorează ofertele noastre de internship-uri și pregătește-te să-ți <br> construiești viitorul profesional cu noi.</p> <!-- Descriere detaliată -->
+            </div>
+        </section>
+    
+        
+        <section class="internship-experiences"> 
+            <h2>Experiențe de Internship</h2> 
+            <br>
+            <div class="internship-grid"> 
+                <div class="internship-card">
+                    <img src="https://images.pexels.com/photos/3205567/pexels-photo-3205567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Internship 1"> <!-- Imagine pentru experiența de internship -->
+                    <br>
+                    <h3>Internship Marketing Digital</h3> 
+                    <p>Oferă oportunitatea de a lucra în echipă pentru promovarea produselor și serviciilor companiei în mediul online.</p> <!-- Descriere a experienței de internship -->
+                </div>
+                
+                <div class="internship-card"> 
+                    <img src="https://images.pexels.com/photos/7438102/pexels-photo-7438102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Internship 2"> <!-- Imagine pentru experiența de internship -->
+                    <br>
+                    <h3>Internship Dezvoltare Software</h3> 
+                    <p>Oferă oportunitatea de a participa la dezvoltarea și implementarea soluțiilor software pentru nevoile companiei.</p> <!-- Descriere a experienței de internship -->
+                </div>
+        
+            </div>
+        </section>
+        
+        <section class="internship-benefits">
+            <h2>Beneficii ale Internship-ului</h2>
+            <div class="benefits-list">
+                <div class="benefit-item"> 
+                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Networking"> 
+                    <h3>Networking</h3> 
+                    <p>Oferă posibilitatea de a întâlni și a interacționa cu profesioniști din domeniul dorit, facilitând construirea unei rețele profesionale extinse.</p> 
+                </div>
+                <div class="benefit-item"> 
+                    <img src="https://images.pexels.com/photos/6238186/pexels-photo-6238186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> 
+                    <h3>Dezvoltarea abilităților</h3> 
+                    <p>Oferea oportunitatea de a-ți dezvolta și a-ți perfecționa abilitățile practice în domeniul de interes.</p> 
+                </div>
+            </div>
+        </section>
+
+        <section class="probability-calculator">
+            <h2>Calculator de probabilitate pentru internship</h2>
+            <label for="ani-studiu">Selectează numărul de ani de studiu:</label><br>
+            <input type="range" id="ani-studiu" min="0" max="6" value="0" step="1" oninput="updateSliderValue(this.value)">
+            <span id="ani-studiu-value">0</span> ani<br><br>
+            <button onclick="calculeazaProbabilitatea()">Calculează Probabilitatea</button>
+            <br>
+            <p id="rezultat-probabilitate"></p>
+        </section>
+        
+        <section class="apply-now"> 
+            <h2>Cum să aplici</h2> 
+            <p>Pentru a aplica la unul dintre internship-urile noastre, completați formularul de mai jos sau contactați-ne la adresa de e-mail: info@internexa.com</p> <!-- Instrucțiuni pentru aplicare -->
+            <br>
+            <form action="upload_cv.php" method="post" enctype="multipart/form-data"> 
+                <label for="nume">Nume:</label>
+                <input type="text" name="nume" id="nume"><br>
+                <label for="prenume">Prenume:</label>
+                <input type="text" name="prenume" id="prenume"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="cv">CV:</label>
+                <input type="file" name="cv" id="cv"><br>
+                <input type="submit" value="Trimite">
+            </form>
+            <br><br><br>
+        </section>
+    </main>
+    
+    <footer> <!-- Footer-ul paginii -->
+        <div class="footer-container">
+            <div class="footer-logo">InterNexa</div> 
+            <ul class="footer-links"> 
+                <li><a href="index.html">Acasa</a></li> 
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-address"> 
+                <p>info@internexa.com</p> 
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,569 @@
+/* Importăm fontul Zona Pro */
+@import url('https://fonts.cdnfonts.com/css/zona-pro');
+
+/* Resetează marginile, padding-ul și box-sizing pentru toate elementele */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilurile pentru corpul paginii */
+body {
+    font-family: Poppins, sans-serif; /* Fontul pentru text */
+}
+
+/* Stilurile pentru antet */
+header {
+    width: 100%;
+    background-color: #333; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+/* Stilurile pentru bara de navigare */
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    padding:  25px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+.navbar a {
+    text-decoration: none;
+}
+
+/* Stilurile pentru logo */
+.logo {
+    color: #475bf8; /* Culoarea textului */
+    font-size: 1.5em; /* Dimensiunea fontului */
+    font-weight: bold; /* Grosimea fontului */
+}
+
+/* Stilurile pentru link-urile din meniu */
+.nav-links {
+    display: flex; 
+    list-style: none; /
+}
+
+.nav-links li {
+    margin: 0 15px;/
+}
+
+.nav-links a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1em; /* Dimensiunea fontului */
+    text-transform: uppercase; /* Transformă literele în majuscule */
+    transition: color 0.3s; /* Tranziție pentru culoarea textului */
+}
+
+.nav-links a:hover {
+    color: #4754df; /* Culoarea textului la hover */
+}
+
+/* Stilurile pentru iconițele din meniu */
+.nav-icons a {
+    color: #fff; /* Culoarea textului */
+    margin-left: 15px; /* Margin stânga */
+    font-size: 1.2em; /* Dimensiunea fontului */
+    transition: color 0.3s; /* Tranziție pentru culoarea textului */
+}
+
+.nav-icons a:hover {
+    color: #475bf8; /* Culoarea textului la hover */
+}
+
+/* Stilurile pentru conținutul principal */
+main {
+    padding-top: 70px; /* Spațiu deasupra conținutului pentru a compensa înălțimea antetului fix */
+}
+
+/* Stilurile pentru secțiunea introductivă */
+.intro {
+    height: 90vh; /* Înălțimea secțiunii este 90% din înălțimea vizibilă a paginii */
+    display: flex; /* Flex container */
+    align-items: center; /* Aliniere verticală */
+    padding-left: 0%; /* Spațiu de la marginea stângă */
+    background: url('/img/fundal-sectiune-1.jpg') no-repeat center center/cover; /* Imagine de fundal */
+}
+
+.intro-text {
+    font-size: 2.3em; /* Dimensiunea fontului */
+    padding-left: 40px; /* Padding stânga */
+    color: #fff; /* Culoarea textului */
+    font-weight: Bold; /* Grosimea fontului */
+}
+
+.intro-text p{
+    font-size: 17px; /* Dimensiunea fontului */
+    color: #fff; /* Culoarea textului */
+    font-weight: lighter; /* Grosimea fontului */
+}
+
+/* Stilurile pentru subsol */
+footer {
+    width: 100%; /* Lățimea completă */
+    background-color: #333; /* Culoarea de fundal */
+    color: #fff; /* Culoarea textului */
+    padding: 20px 0; /* Padding sus și jos */
+    position: relative; /* Poziție relativă */
+    bottom: 0; /* Poziționare în partea de jos */
+}
+
+/* Stilurile pentru containerul subsolului */
+.footer-container {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Spațiere între elementele flexibile */
+    align-items: center; /* Aliniere verticală */
+    max-width: 1200px; /* Lățime maximă */
+    margin: 0 auto; /* Margini automate pe orizontală */
+    padding: 0 20px; /* Padding stânga și dreapta */
+}
+
+/* Stilurile pentru logo-ul subsolului */
+.footer-logo {
+    font-size: 1.5em; /* Dimensiunea fontului */
+    font-weight: bold; /* Grosimea fontului */
+}
+
+/* Stilurile pentru link-urile din subsol */
+.footer-links {
+    list-style: none; /* Dezactivează stilurile implicite ale listei */
+    display: flex; /* Flex container */
+}
+
+.footer-links li {
+    margin: 0 15px; /* Margini între elemente */
+}
+
+.footer-links a {
+    color: #fff; /* Culoarea textului */
+    text-decoration: none; /* Dezactivează sublinierea */
+    font-size: 1em; /* Dimensiunea fontului */
+    transition: color 0.3s; /* Tranziție pentru culoarea textului */
+}
+
+.footer-links a:hover {
+    color: #ddd; /* Culoarea textului la hover */
+}
+
+/* Stilurile pentru adresa din subsol */
+.footer-address p {
+    margin: 0; /* Marginuri zero */
+}
+
+/* Stilurile pentru secțiunea de internship-uri */
+.internships {
+    display: grid; /* Grid container */
+    grid-template-columns: repeat(auto-fit, minmax(354px, 300px)); /* Coloane flexibile */
+    gap: 20px; /* Spațiere între elemente */
+    padding: 20px; /* Padding pentru conținut */
+}
+
+/* Stilurile pentru fiecare internship */
+.internship {
+    background: #f4f4f4; /* Culoarea de fundal */
+    border-radius: 10px; /* Bordură rotunjită */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra */
+    text-align: left; /* Aliniere la stânga */
+    text-decoration: none; /* Dezactivează
+
+text-decoration: none; /* Dezactivează sublinierea */
+    color: #000; /* Culoarea textului */
+    transition: transform 0.3s, box-shadow 0.3s;} /* Tranziție pentru transformare și umbră */
+
+.internship:hover {
+transform: translateY(-5px); /* Efect de ridicare la hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Umbra mărită la hover */
+}
+
+/* Stilurile pentru imaginea fiecărui internship */
+.internship img {
+width: 100%; /* Lățime completă */
+height: 200px; /* Înălțime fixă */
+object-fit: cover; /* Asigură că imaginea acoperă întreaga zonă */
+border-radius: 10px 10px 0 0; /* Bordură rotunjită numai sus */
+}
+
+/* Stilurile pentru titlul fiecărui internship */
+.internship h1 {
+font-size: 1.5em; /* Dimensiunea fontului */
+margin: 10px 15px; /* Margini pentru titlu */
+}
+
+/* Stilurile pentru paragraful fiecărui internship */
+.internship p {
+font-size: 1em; /* Dimensiunea fontului */
+color: #555; /* Culoarea textului */
+margin: 0 15px 15px; /* Margini pentru paragraf */
+}
+
+/* Stilurile pentru secțiunea detaliilor ofertei */
+.oferta {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Spațiere între elementele flexibile */
+    align-items: flex-start; /* Ajustare aliniere pentru conținutul flexibil */
+    padding: 20px; /* Padding pentru conținut */
+}
+
+/* Stilurile pentru detaliile ofertei */
+.oferta-details {
+    flex: 1; /* Mărime flexibilă */
+}
+
+/* Stilurile pentru titlul detaliilor ofertei */
+.oferta-details h1 {
+    font-size: 2em; /* Dimensiunea fontului */
+    margin-bottom: 10px; /* Margin jos */
+}
+
+/* Stilurile pentru paragraful detaliilor ofertei */
+.oferta-details p {
+    font-size: 1.2em; /* Dimensiunea fontului */
+    margin-bottom: 5px; /* Margin jos */
+}
+
+/* Stilurile pentru imaginea detaliilor ofertei */
+.oferta-image {
+    flex: 1; /* Mărime flexibilă */
+}
+
+/* Stilurile pentru imaginea ofertei */
+.oferta-image img {
+    max-width: 100%; /* Lățime maximă */
+    border-radius: 10px; /* Bordură rotunjită */
+}
+
+/* Stilurile pentru secțiunea formularului */
+.form-section {
+    max-width: 600px; /* Lățime maximă */
+    margin: 50px auto; /* Margini automate */
+    padding: 20px; /* Padding pentru conținut */
+    background-color: #f4f4f4; /* Culoarea de fundal */
+    border-radius: 10px; /* Bordură rotunjită */
+}
+
+/* Stilurile pentru grupul de formulare */
+.form-group {
+    margin-bottom: 20px; /* Margin jos */
+}
+
+/* Stilurile pentru etichetă */
+label {
+    display: block; /* Element de tip block */
+    font-weight: bold; /* Grosimea fontului */
+}
+
+/* Stilurile pentru input-uri de tip text, număr, email, tel */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Lățime completă */
+    padding: 10px; /* Padding pentru conținut */
+    font-size: 1em; /* Dimensiunea fontului */
+    border-radius: 5px; /* Bordură rotunjită */
+    border: 1px solid #ccc; /* Bordură */
+}
+
+/* Stilurile pentru textarea */
+textarea {
+    resize: vertical; /* Redimensionare verticală */
+}
+
+/* Stilurile pentru input-ul de tip fișier */
+input[type="file"] {
+    width: calc(100% - 20px); /* Lățime calculată */
+    padding: 10px; /* Padding pentru conținut */
+    font-size: 1em; /* Dimensiunea fontului */
+    border-radius: 5px; /* Bordură rotunjită */
+    border: 1px solid #ccc; /* Bordură */
+}
+
+/* Stilurile pentru buton */
+button {
+    padding: 10px 20px; /* Padding pentru conținut */
+    background-color: #333; /* Culoarea de fundal */
+    color: #fff; /* Culoarea textului */
+    border: none; /* Fără bordură */
+    border-radius: 5px; /* Bordură rotunjită */
+    font-size: 1em; /* Dimensiunea fontului */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s; /* Tranziție pentru culoarea de fundal */
+}
+
+button:hover {
+    background-color: #555; /* Culoarea de fundal la hover */
+}
+
+/* Stilurile pentru secțiunea experiențelor de internship */
+.internship-experiences {
+    padding: 50px; /* Padding pentru conținut */
+    text-align: center; /* Aliniere la centru */
+}
+
+/* Stilurile pentru gridul de internship-uri */
+.internship-grid {
+    display: grid; /* Grid container */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Coloane flexibile */
+    gap: 20px; /* Spațiere între elemente */
+    justify-content: center; /* Justificare la centru */
+}
+
+/* Stilurile pentru cardul de internship */
+.internship-card {
+    background-color: #fff; /* Culoarea de fundal */
+    border-radius: 10px; /* Bordură rotunjită */
+    padding: 20px; /* Padding pentru conținut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra */
+}
+
+/* Stilurile pentru imaginea din cardul de internship */
+.internship-card img {
+    max-width: 100%; /* Lățime maximă */
+    border-radius: 5px; /* Bordură rotunjită */
+}
+
+/* Stilurile pentru secțiunea beneficiilor internship-ului */
+.internship-benefits {
+    background-color: #f9f9f9; /* Culoarea de fundal */
+    padding: 50px; /* Padding pentru conținut */
+    text-align: center; /* Aliniere la centru */
+}
+
+/* Stilurile pentru lista de beneficii */
+.benefits-list {
+    display: flex; /* Flex container */
+    justify-content: space-around; /* Spațiere între elementele flexibile */
+    flex-wrap: wrap; /* Înfășurare pe mai multe linii */
+}
+
+/* Stilurile pentru fiecare element de beneficiu */
+.benefit-item {
+    width: 250px; /* Lățime fixă */
+    background-color: #fff; /* Culoarea de fundal */
+    border-radius: 10px; /* Bordură rotunjită */
+    padding: 20px; /* Padding pentru conținut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra */
+    margin: 10px; /* Margini exterioare */
+}
+
+/* Stilurile pentru imaginea din elementul de beneficiu */
+.benefit-item img {
+    max-width: 100%; /* Lățime maximă */
+    border-radius: 5px; /* Bordură rotunjită */
+}
+
+/* Stilurile pentru secțiunea de aplicare */
+.apply-now {
+    padding: 50px; /* Padding pentru conținut */
+    text-align: center; /* Aliniere la centru */
+}
+
+/* Stilurile pentru formularul de aplicare */
+/* Stilurile pentru formularul de aplicare */
+.apply-now form {
+    max-width: 400px; /* Lățime maximă */
+    margin: 0 auto; /* Margini automate pe orizontală */
+}
+
+/* Stilurile pentru etichetele din formularul de aplicare */
+.apply-now label {
+    display: block; /* Element de tip block */
+    margin-bottom: 5px; /* Margin jos */
+    font-weight: bold; /* Grosimea fontului */
+}
+
+/* Stilurile pentru input-urile din formularul de aplicare */
+.apply-now input[type="text"],
+.apply-now input[type="email"],
+.apply-now input[type="file"] {
+    width: 100%; /* Lățime completă */
+    padding: 10px; /* Padding pentru conținut */
+    margin-bottom: 20px; /* Margin jos */
+    border: 1px solid #ccc; /* Bordură */
+    border-radius: 5px; /* Bordură rotunjită */
+}
+
+/* Stilurile pentru butonul de submit din formularul de aplicare */
+.apply-now input[type="submit"] {
+    width: 100%; /* Lățime completă */
+    padding: 10px; /* Padding pentru conținut */
+    background-color: #475bf8; /* Culoarea de fundal */
+    color: #fff; /* Culoarea textului */
+    border: none; /* Fără bordură */
+    border-radius: 5px; /* Bordură rotunjită */
+    cursor: pointer; /* Cursor pointer */
+}
+
+.apply-now input[type="submit"]:hover {
+    background-color: #475bf8; /* Culoarea de fundal la hover */
+}
+
+/* Stilurile pentru calculatorul de probabilitate */
+.probability-calculator {
+    display: flex; /* Flex container */
+    flex-direction: column; /* Direcția coloanelor */
+    align-items: center; /* Aliniere la centru */
+    text-align: center; /* Aliniere la centru */
+    margin-top: 50px; /* Margin sus */
+}
+
+/* Stilurile pentru input-ul de tip range */
+.probability-calculator input[type=range] {
+    width: 80%; /* Lățime */
+    margin-bottom: 10px; /* Margin jos */
+}
+
+/* Stilurile pentru butonul din calculatorul de probabilitate */
+.probability-calculator button {
+    width: 200px; /* Lățime */
+    margin-top: 20px; /* Margin sus */
+}
+
+/* Stilurile pentru secțiunea Despre */
+.about-section {
+    background-color: #f9f9f9; /* Culoarea de fundal */
+    padding: 60px 0; /* Padding pentru conținut */
+}
+
+/* Stilurile pentru titlul secțiunii Despre */
+.section-title {
+    padding: 20px; /* Padding pentru conținut */
+}
+
+/* Stilurile pentru conținutul secțiunii Despre */
+.about-content {
+    display: grid; /* Grid container */
+    grid-template-columns: 1fr 1fr; /* Coloane egale */
+    gap: 40px; /* Spațiere între coloane */
+    align-items: center; /* Aliniere la centru */
+}
+
+/* Stilurile pentru textul secțiunii Despre */
+.about-text {
+    padding: 20px; /* Padding pentru conținut */
+}
+
+.about-text h3 {
+    color: #333; /* Culoarea textului */
+    font-size: 24px; /* Dimensiunea fontului */
+    margin-bottom: 10px; /* Margin jos */
+}
+
+.about-text p {
+    color: #666; /* Culoarea textului */
+    font-size: 16px; /* Dimensiunea fontului */
+    line-height: 1.6; /* Înălțimea liniei */
+}
+
+.about-text ul {
+    list-style: none; /* Dezactivează stilurile implicite ale listei */
+    padding: 0; /* Padding zero */
+    margin-top: 20px; /* Margin sus */
+}
+
+.about-text ul li {
+    margin-bottom: 10px; /* Margin jos */
+}
+
+/* Stilurile pentru imaginile secțiunii Despre */
+.about-images {
+    display: grid; /* Grid container */
+    grid-template-columns: repeat(3, 1fr); /* Trei coloane egale */
+    gap: 20px; /* Spațiere între elemente */
+}
+
+/* Stilurile pentru imaginea secțiunii Despre */
+.about-image img {
+    width: 100%; /* Lățime completă */
+    border-radius: 8px; /* Bordură rotunjită */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra */
+}
+
+.contact-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.contact-container a {
+    color: #2560d5;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    vertical-align: middle;
+}
+
+.internship-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.internship-section .section-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.internship-section .internship-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.internship-section .internship-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru butonul de contact */
+.internship-section .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.internship-section .contact-button:hover {
+    background-color: #45a049;
+}
